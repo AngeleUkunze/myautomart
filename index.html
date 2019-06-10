@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		a{margin:30px; padding-right:0px;}
+		a{text-decoration:none; color:black;}
+		a:hover{background-color:lightgreen;}
+		img{width:400px; height: 300px; }
+		body{font-family: Times New Roman; text-align: justify;}
+		#footer{background-color: lightgrey; height: 90px;}
+    img{ margin-left:150px; margin-right:80px; width:1000px; height:400px;}
+    button{width: 200px; background-color: lightblue; margin-top: 30px; margin-right:50px; font-size: 30px; color:black; height:60px;}
+	ul{
+list-style:none;
+margin:0px;
+padding:0px;
+}
+
+ul li{
+float:left;
+width:200px;
+height:50px;
+line-height:50px;
+opacity:.9;
+
+}
+
+a{
+text-decoration:none;
+color:black;
+text-shadow:1px 1px blue;
+font-size:40px;
+}
+ul li ul li{
+display:none;
+}
+ul li a:hover{
+background-color:chocolate; width:200px; height:50px;}
+
+ul li:hover ul li{display:block;}
+p{
+font-family:Gabriola;
+font-size:30px;
+}
+h1{margin-top:40px;
+font-family:tahoma;
+color:blue;
+}
+p{margin-bottom:60px;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("c13.jpg");
+
+  /* Full height */
+  height: 50%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+	</style>
+</head>
+<body>
+<div class="bg"></div>
+
+<div style="align:right; margin-left:350px; position:absolute; margin-top:100px;font-family:Gabriola">
+<ul>
+<li><a href="index.html">Menu</a></li>
+<li><a href="welcome.html">Home</a></li>
+<li><a href="About us.html">About us</a></li>
+</ul>
+</div>
+<center><h1>welcome to the website to attract customers</h1></center>
+<div>
+  <img class="mySlides" src="images/c1.jpg" style="border-radius=20px">
+  <img class="mySlides" src="images/c2.jpg" style="border-radius=20px">	
+  <img class="mySlides" src="images/c4.jpg" style="border-radius:20px">
+  <img class="mySlides" src="images/c4.jpg" style="border-radius:20px">   
+  <img class="mySlides" src="images/c5.jpg" style="border-radius:20px">
+  <img class="mySlides" src="images/c6.jpg" style="border-radius:20px">  
+  <img class="mySlides" src="images/c7.webp" style="border-radius:20px">  
+  <img class="mySlides" src="images/c9.webp" style="border-radius:20px">  
+</div>
+
+<div style=" text-align: right;">
+<center><p>Here are the cars we sell .As you see these are the most quality awesome cars to drive.<br> 
+if you are interested in buying ,visit <a href="About us.html"><b><u>About us</u></b></a></p><center>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000);    
+}
+</script>
+
+
+</body>
+</html>
